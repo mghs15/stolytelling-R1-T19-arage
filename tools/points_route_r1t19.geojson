@@ -1,0 +1,821 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          164.4,
+          15.7
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 5,
+        "hour": 3,
+        "atm": 1008,
+        "other": "-- --- --- 熱帯低気圧発生"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          162.7,
+          15
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 5,
+        "hour": 9,
+        "atm": 1006,
+        "other": "-- --- ---"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          161.1,
+          15.3
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 5,
+        "hour": 15,
+        "atm": 1004,
+        "other": "-- --- ---"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          159.4,
+          15.2
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 5,
+        "hour": 21,
+        "atm": 1004,
+        "other": "-- --- ---"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          157.4,
+          15.1
+        ]
+      },
+      "properties": {
+        "month": 6,
+        "date": 6,
+        "hour": 3,
+        "atm": 1000,
+        "other": "18 --- 330 － －"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          155.6,
+          14.4
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 6,
+        "hour": 9,
+        "atm": 992,
+        "other": "23 --- 390 － －"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          154.1,
+          14.3
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 6,
+        "hour": 15,
+        "atm": 985,
+        "other": "30 90 390 － －"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153,
+          14.6
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 6,
+        "hour": 21,
+        "atm": 970,
+        "other": "35 150 390 － 強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2,
+          14.9
+        ]
+      },
+      "properties": {
+        "month": 7,
+        "date": 7,
+        "hour": 3,
+        "atm": 955,
+        "other": "40 170 440 － 強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.6,
+          15.1
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 7,
+        "hour": 9,
+        "atm": 940,
+        "other": "45 190 E: 650 W: 440 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.2,
+          15.5
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 7,
+        "hour": 15,
+        "atm": 925,
+        "other": "50 190 E: 650 W: 440 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.6,
+          16.1
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 7,
+        "hour": 21,
+        "atm": 915,
+        "other": "55 190 E: 650 W: 440 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9,
+          16.5
+        ]
+      },
+      "properties": {
+        "month": 8,
+        "date": 8,
+        "hour": 3,
+        "atm": 915,
+        "other": "55 190 E: 650 W: 440 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.8,
+          16.9
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 8,
+        "hour": 9,
+        "atm": 915,
+        "other": "55 190 E: 650 W: 440 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.7,
+          17.7
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 8,
+        "hour": 15,
+        "atm": 915,
+        "other": "55 220 E: 650 W: 440 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.8,
+          18.4
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 8,
+        "hour": 21,
+        "atm": 915,
+        "other": "55 220 E: 650 W: 440 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9,
+          19.3
+        ]
+      },
+      "properties": {
+        "month": 9,
+        "date": 9,
+        "hour": 3,
+        "atm": 915,
+        "other": "55 240 E: 650 W: 440 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4,
+          19.8
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 9,
+        "hour": 9,
+        "atm": 915,
+        "other": "55 240 E: 650 W: 440 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140,
+          20.6
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 9,
+        "hour": 15,
+        "atm": 915,
+        "other": "55 240 E: 650 W: 440 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6,
+          21.2
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 9,
+        "hour": 21,
+        "atm": 915,
+        "other": "55 240 E: 750 W: 650 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7,
+          22
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 10,
+        "hour": 3,
+        "atm": 915,
+        "other": "55 240 E: 750 W: 650 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9,
+          23.2
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 10,
+        "hour": 9,
+        "atm": 915,
+        "other": "55 240 E: 750 W: 650 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5,
+          24.4
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 10,
+        "hour": 15,
+        "atm": 915,
+        "other": "55 E: 330 W: 240 E: 750 W: 650 大型 猛烈な"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139,
+          25.3
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 10,
+        "hour": 21,
+        "atm": 920,
+        "other": "50 E: 330 W: 240 E: 750 W: 650 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6,
+          26.3
+        ]
+      },
+      "properties": {
+        "month": 11,
+        "date": 11,
+        "hour": 3,
+        "atm": 925,
+        "other": "50 E: 370 W: 280 E: 750 W: 650 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.1,
+          27.5
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 11,
+        "hour": 9,
+        "atm": 935,
+        "other": "45 E: 370 W: 280 E: 750 W: 650 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.5,
+          28.8
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 11,
+        "hour": 15,
+        "atm": 935,
+        "other": "45 E: 370 W: 280 E: 750 W: 650 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.1,
+          29.9
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 11,
+        "hour": 21,
+        "atm": 945,
+        "other": "45 E: 370 W: 280 E: 750 W: 650 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137,
+          30.3
+        ]
+      },
+      "properties": {
+        "month": 12,
+        "date": 12,
+        "hour": 0,
+        "atm": 945,
+        "other": "45 E: 370 W: 280 E: 750 W: 650 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.1,
+          30.8
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 12,
+        "hour": 3,
+        "atm": 945,
+        "other": "45 E: 370 W: 280 650 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.1,
+          31.4
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 12,
+        "hour": 6,
+        "atm": 945,
+        "other": "45 E: 370 W: 280 650 大型 非常に強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.4,
+          32
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 12,
+        "hour": 9,
+        "atm": 950,
+        "other": "40 E: 370 W: 280 650 大型 強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6,
+          32.8
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 12,
+        "hour": 12,
+        "atm": 950,
+        "other": "40 SE: 370 NW: 280 650 大型 強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.2,
+          33.7
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 12,
+        "hour": 15,
+        "atm": 950,
+        "other": "40 SE: 330 NW: 260 650 大型 強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7,
+          34.6
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 12,
+        "hour": 18,
+        "atm": 955,
+        "other": "40 SE: 330 NW: 260 650 大型 強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6,
+          35.6
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 12,
+        "hour": 21,
+        "atm": 965,
+        "other": "35 SE: 330 NW: 260 650 大型 強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6,
+          36.9
+        ]
+      },
+      "properties": {
+        "month": 13,
+        "date": 13,
+        "hour": 0,
+        "atm": 970,
+        "other": "35 280 600 大型 強い"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.8,
+          38.2
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 13,
+        "hour": 3,
+        "atm": 975,
+        "other": "30 280 600 大型 －"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.5,
+          39.5
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 13,
+        "hour": 6,
+        "atm": 975,
+        "other": "30 280 600 大型 －"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.1,
+          40.1
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 13,
+        "hour": 9,
+        "atm": 975,
+        "other": "30 280 600 大型 －"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147,
+          41
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 13,
+        "hour": 12,
+        "atm": 980,
+        "other": "-- --- --- 温帯低気圧に変わる"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          149.8,
+          41.9
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 13,
+        "hour": 15,
+        "atm": 984,
+        "other": "-- --- ---"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          155.9,
+          44
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 13,
+        "hour": 21,
+        "atm": 988,
+        "other": "-- --- ---"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          163.3,
+          47
+        ]
+      },
+      "properties": {
+        "month": 14,
+        "date": 14,
+        "hour": 3,
+        "atm": 984,
+        "other": "-- --- ---"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.6,
+          51.6
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 14,
+        "hour": 9,
+        "atm": 980,
+        "other": "-- --- ---"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.9,
+          54.3
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 14,
+        "hour": 15,
+        "atm": 970,
+        "other": "-- --- ---"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          179.7,
+          56.4
+        ]
+      },
+      "properties": {
+        "month": 10,
+        "date": 14,
+        "hour": 21,
+        "atm": 956,
+        "other": "-- --- ---"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -178,
+          57.4
+        ]
+      },
+      "properties": {
+        "month": 15,
+        "date": 15,
+        "hour": 3,
+        "atm": 954,
+        "other": "-- --- --- 域外"
+      }
+    }
+  ]
+}

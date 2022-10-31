@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>台風位置図変換</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script>
+
+const globalInfo = {};
+
+
+const addCard = () => {
+  console.log("add");
+  const selectedFile = document.getElementById('addCard').files[0];
+  console.log(selectedFile);
+  
+  const reader = new FileReader();
+  reader.onload = () => {
+    
+    globalInfo.data = reader.result;
+    console.log(globalInfo.data);
+    
+    setTimeout(() => {
+      const parent = document.getElementById('wrap');
+      parent.innerHTML = "読み込み完了！";
+    }, 0);
+    
+    setTimeout(() => {
+      renderFromList();
+    }, 0);
+    
+  }
+  
+  reader.readAsText(selectedFile); // , 'shift-jis'
+}
+
+const main = (d) => {
+
+  let tmp = {
+    "month": null,
+    "date": null,
+    "ns": "N",
+    "ew": "E"
+  };
+
+  let res = "";
+  let ls = {
+    "type": "FeatureCollection",
+    "features": [{
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": []
+      },
+      "properties": {
+        "name": "台風ルート",
+        "reference": "",
+        "_color":  "#FF0000",
+        "_opacity": 1,
+        "_weight": 2
+      }
+    }]
+  };
+  let pt = {
+    "type": "FeatureCollection",
+    "features": []
+  };
+
+  d.split("\n").forEach( line => {
+    if(!line) return;
+    
+    const m = line.match(/^(\S*)\s?(\S*)\s?(\d\d)\s(\d+\.\d+)\s?(N?S?)\s(\d+\.\d+)\s?(E?W?)\s(\d+)\s(.*)/);
+    if(!m) return;
+    
+    console.log(`${m[1]}月${m[2]}日${m[3]}時, lnlat=[${m[4]} ${m[5]}, ${m[6]} ${m[7]}], ${m[8]} hPa, | ${m[9]}`);
+    
+    if(m[1] && m[2]) tmp.month = +m[1];
+    if(m[1] && !m[2]) tmp.date = +m[1];
+    if(m[2]) tmp.date = +m[2];
+    if(m[5]) tmp.ns = m[5];
+    if(m[7]) tmp.ew = m[7];
+    
+    const lat = +m[4] * ( tmp.ns == "S" ? -1 : 1 );
+    const lng = +m[6] * ( tmp.ew == "W" ? -1 : 1 );
+    
+    const feature = {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ lng, lat ]
+      },
+      "properties": {
+        "month": tmp.month,
+        "date": tmp.date,
+        "hour": +m[3],
+        "atm": +m[8],
+        //"other": m[9],
+        "original": line,
+        //"test": m,
+        "_markerType": "DivIcon"
+      }
+    }
+    
+    const pr = feature.properties;
+    feature.properties.name = `${pr.month}月${pr.date}日${pr.hour}時`;
+    feature.properties._html = `<div style="color:#FF0000;">${pr.month}月${pr.date}日${pr.hour}時</div>`;
+    
+    pt.features.push(feature);
+    ls.features[0].geometry.coordinates.push([ lng, lat ]);
+    
+    res += `${tmp.month}月${tmp.date}日${m[3]}時,${lng},${lat},${m[8]}` + "\n"
+    
+  });
+  
+  return {
+    "csv": res,
+    "point": pt,
+    "line": ls
+  };
+  
+}
+
+const renderFromList = () => {
+  
+  if(!globalInfo.data) return;
+  
+  const slide = main(globalInfo.data);
+  
+  console.log(slide);
+  
+  const outputCsv = document.getElementById('textBoxCsv');
+  outputCsv.value = slide.csv;
+
+  
+  const outputLine = document.getElementById('textBoxLine');
+  outputLine.value = JSON.stringify(slide.line, null, 2);
+  
+  
+  const outputPoint = document.getElementById('textBoxPoint');
+  outputPoint.value = JSON.stringify(slide.point, null, 2);
+
+}
+
+
+const copyCsv = () => {
+  const copyText = document.getElementById('textBoxCsv');
+  console.log(copyText);
+  copyText.select();
+  document.execCommand("copy");
+}
+
+
+const copyLine = () => {
+  const copyText = document.getElementById('textBoxLine');
+  console.log(copyText);
+  copyText.select();
+  document.execCommand("copy");
+}
+
+
+const copyPoint = () => {
+  const copyText = document.getElementById('textBoxPoint');
+  console.log(copyText);
+  copyText.select();
+  document.execCommand("copy");
+}
+
+</script>
+
+<style>
+body{
+  background-color: #FFFFFF;
+}
+
+#memo {
+  background-color: #EEEEFF;
+  color: #000000;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 4px;
+}
+
+#info {
+  margin: 8px;
+}
+
+#info input {
+  margin-right: 8px;
+}
+
+#wrap {
+  margin: 8px;
+  padding: 4px;
+}
+
+.outputTextArea {
+  display:block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.textBox {
+  display:block;
+  width: 100%;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="overlayLargeImageSpace"></div>
+<div id="overlayLock"></div>
+<div id="page">
+  <div id="memo">
+  台風位置図変換ツール→<a href="https://www.data.jma.go.jp/yoho/typhoon/route_map/index.html" target="_blank">気象庁のページ</a>
+  </div>
+  <div id="info">
+    <div id="infoAddCardButton">
+      <input type="file" id="addCard" onChange="addCard();">
+    </div>
+    <div class="outputTextArea"><textarea class="textBox" id="textBoxCsv" rows="10"></textarea></div>
+    <div class="infoSearchButton"><button class="searchButton" onClick="copyCsv();">CSV コピー</button></div>
+    <div class="outputTextArea"><textarea class="textBox" id="textBoxLine" rows="10"></textarea></div>
+    <div class="infoSearchButton"><button class="searchButton" onClick="copyLine();">GeoJSON (Line) コピー</button></div>
+    <div class="outputTextArea"><textarea class="textBox" id="textBoxPoint" rows="10"></textarea></div>
+    <div class="infoSearchButton"><button class="searchButton" onClick="copyPoint();">GeoJSON (Point) コピー</button></div>
+  </div>
+  <div id="wrap">
+  </div>
+</div>
+
+<script>
+  
+</script>
+
+</body>
+</html>
+
+

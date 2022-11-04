@@ -112,7 +112,7 @@ const main = (d) => {
     };
     
     const m1 = other.match(/^([0-9]+)\s/);
-    const m2 = other.match(/^(E|S|NE):\s(\d+)\s(W|N|SW):\s(\d+)\s/);
+    const m2 = other.match(/^(E|S|NE|NW|W|N|SW|SE):\s(\d+)\s(E|S|NE|NW|W|N|SW|SE):\s(\d+)\s/);
     
     if(m1){
       boufu.direction.push("-");

@@ -1,5 +1,27 @@
 var config = {
-  "style": "https://gsi-cyberjapan.github.io/optimal_bvmap/style/std.json",
+  "style": {
+    "version": 8,
+    "name": "gsimapvector",
+    "glyphs": "https://gsi-cyberjapan.github.io/optimal_bvmap/glyphs/{fontstack}/{range}.pbf",
+    "sprite": "https://gsi-cyberjapan.github.io/optimal_bvmap/sprite/std",
+    "sources": {
+        "r": {
+            "type": "raster",
+            "tiles": ["https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png"],
+            "tileSize": 256,
+            "minzoom": 2,
+            "maxzoom": 18,
+            "attribution": "地理院タイル"
+        }
+    },
+    "layers": [
+        {
+            "id": "pale",
+            "type": "raster",
+            "source": "r"
+        },
+    ]
+  },
   "accessToken": "",
   "showMarkers": true,
   "markerColor": "#3FB1CE",
